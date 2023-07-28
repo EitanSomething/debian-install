@@ -1,1 +1,1 @@
-# debian-sway
+# debian-install scripts
