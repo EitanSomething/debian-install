@@ -21,5 +21,13 @@ sudo apt install -y neofetch
 bash /wm/eww-install.sh
 bash /wm/sway-commands.sh
 
-sudo apt install sddm
-sudo systenctl sddm
+sudo apt install libpam0g-dev libxcb-xkb-dev
+
+git clone --recurse-submodules https://github.com/fairyglade/ly
+cd ly
+make 
+make run
+
+make install installsystemd
+sudo systemctl enable ly.service
+sudo systemctl restart ly
