@@ -15,7 +15,7 @@ sudo apt install -y lxappearance
 sudo apt install -y kitty
 
 # Sound audio
-sudo apt install -y pulseaudio alsa-utils pavucontrol volumicon-alsa pamixer
+sudo apt install -y pulseaudio alsa-utils pavucontrol volumeicon-alsa pamixer
 
 sudo apt install -y neofetch
 
