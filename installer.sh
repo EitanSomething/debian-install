@@ -9,6 +9,7 @@ sudo apt install -y build-essential
 
 xdg-user-dirs-update
 
+sudo apt install -y lxappearance
 
 # Terminal
 sudo apt install -y kitty
@@ -18,16 +19,17 @@ sudo apt install -y pulseaudio alsa-utils pavucontrol volumicon-alsa pamixer
 
 sudo apt install -y neofetch
 
-bash /wm/eww-install.sh
-bash /wm/sway-commands.sh
+bash wm/eww-install.sh
+bash wm/sway-commands.sh
 
-sudo apt install libpam0g-dev libxcb-xkb-dev
+sudo apt install -y libpam0g-dev libxcb-xkb-dev
 
 git clone --recurse-submodules https://github.com/fairyglade/ly
 cd ly
 make 
-make run
 
-make install installsystemd
+sudo make install installsystemd
+cd ..
 sudo systemctl enable ly.service
 sudo systemctl restart ly
+
