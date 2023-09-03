@@ -8,7 +8,7 @@ sudo apt install -y build-essential
 sudo apt install -y sway swaylock swayidle swaybg
 
 mkdir -p ~/.config/sway
-cp /etc/sway/config ~/.config/sway/
+sudo cp /etc/sway/config ~/.config/sway/
 $EDITOR ~/.config/sway/config
 
 
