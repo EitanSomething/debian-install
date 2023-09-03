@@ -14,7 +14,7 @@ cd eww
 
 rustup override set nightly
 
-cargo build --release --no-default-features --features=wayland
+cargo build --out-dir /usr/local/bin/eww --release --no-default-features --features=wayland
 
 cd target/release
 chmod +x ./eww
