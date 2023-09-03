@@ -15,8 +15,9 @@ sudo apt install -y lxappearance
 sudo apt install -y kitty
 
 # Sound audio
-sudo apt install -y pulseaudio alsa-utils pavucontrol volumeicon-alsa pamixer
+sudo apt install -y wireplumber alsa-utils pavucontrol volumeicon-alsa pamixer
 
+sudo systemctl --user --now enable wireplumber.service
 sudo apt install -y neofetch
 
 bash wm/eww-install.sh
