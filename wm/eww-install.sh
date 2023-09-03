@@ -6,17 +6,18 @@ sudo apt install -y rustc libgdk3.0-cil libgtk-3-0 libgtk-3-dev libgtk-layer-she
 #Rustup
 curl https://sh.rustup.rs -sSf | sh
 
+rustup toolchain install nightly
 
 #Source
 git clone https://github.com/elkowar/eww
 
 cd eww
 
-rustup override set nightly
+rustup run nightly
 
 cargo build --out-dir /usr/local/bin/eww --release --no-default-features --features=wayland
 
-cd target/release
+cd /usr/local/bin/eww/target/release
 chmod +x ./eww
 ./eww daemon
 
