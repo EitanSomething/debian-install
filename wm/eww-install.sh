@@ -15,7 +15,7 @@ cd eww
 
 rustup run nightly
 
-cargo build --out-dir /usr/local/bin/eww --release --no-default-features --features=wayland
+cargo build --target-dir /usr/local/bin/eww --release --no-default-features --features=wayland
 
 cd /usr/local/bin/eww/target/release
 chmod +x ./eww
