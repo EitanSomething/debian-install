@@ -8,6 +8,8 @@ curl https://sh.rustup.rs -sSf | sh
 
 export PATH="/$HOME/.cargo/env:$PATH"
 
+echo 'export PATH="/Directory1:$PATH"' >> ~/.bashrc
+
 rustup toolchain install nightly
 
 #Source
@@ -15,9 +17,13 @@ git clone https://github.com/elkowar/eww
 
 cd eww
 
-rustup run nightly
+rustup default nightly
+rustup update
 
 cargo build --target-dir /usr/local/bin/eww --release --no-default-features --features=wayland
+
+rustup default stable
+rustup update
 
 cd /usr/local/bin/eww/target/release
 chmod +x ./eww
