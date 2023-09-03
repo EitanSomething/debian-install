@@ -3,7 +3,7 @@
 
 # Install packages after installing base Debian with no GUI
 
-sudo apt install -y build-essential 
+sudo apt install -y build-essential curl
 
 # Create folders in user directory
 
