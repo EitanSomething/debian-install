@@ -6,6 +6,8 @@ sudo apt install -y rustc libgdk3.0-cil libgtk-3-0 libgtk-3-dev libgtk-layer-she
 #Rustup
 curl https://sh.rustup.rs -sSf | sh
 
+export PATH="/$HOME/.cargo/env:$PATH"
+
 rustup toolchain install nightly
 
 #Source
